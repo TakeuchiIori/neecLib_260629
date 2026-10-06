@@ -18,6 +18,19 @@ const Note testMelody[] = {
     {NOTE_REST, 8},
 };
 
+const Note mrsMelody[] = {
+    {SI3, 4}, {MI4, 4}, {FA_S4, 4}, {SO_S4, 4},{RA4, 4}, {SI4, 6},   {NOTE_REST, 2},
+    {SI4, 4}, {SI4, 4}, {RA4, 4}, {SO_S4, 4},{FA_S4, 4},{MI4, 4},{SO_S4, 6},
+    {NOTE_REST, 8},
+
+    {SI3, 4}, {MI4, 4}, {FA_S4, 4}, {SO_S4, 4},{RA4, 4}, {SI4, 6}, 
+    {MI4, 2}, {MI4, 2},{NOTE_REST, 2},
+    {RA4, 4}, {SO_S4, 4},{MI4, 4},{FA_S4, 4},{RE_S4, 4},{MI4, 6},
+    {NOTE_REST, 16},
+
+
+};
+
 // 初期化
 void setup() {
     Serial.begin(115200);
@@ -30,7 +43,7 @@ void setup() {
     speaker = new Speaker(Pinout::D6_PWM);
 
     player = new MelodyPlayer(speaker);
-    player->play(testMelody, sizeof(testMelody) / sizeof(testMelody[0]), 120, true);
+    player->play(mrsMelody, sizeof(mrsMelody) / sizeof(mrsMelody[0]), 185, true);
 }
 
 // 点滅用の関数
@@ -70,6 +83,6 @@ void SpeakerUpdate(){
 
 // 更新関数
 void loop() {
-    //SpeakerUpdate();
+    //UpdateLED();
     //player->update();
 }

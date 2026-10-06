@@ -26,10 +26,20 @@ const Note mrsMelody[] = {
     {SI3, 4}, {MI4, 4}, {FA_S4, 4}, {SO_S4, 4},{RA4, 4}, {SI4, 6}, 
     {MI4, 2}, {MI4, 2},{NOTE_REST, 2},
     {RA4, 4}, {SO_S4, 4},{MI4, 4},{FA_S4, 4},{RE_S4, 4},{MI4, 6},
-    {NOTE_REST, 16},
+    {NOTE_REST, 4},
 
+    {SI3, 4}, {MI4, 4}, {FA_S4, 4}, {SO_S4, 4},{RA4, 4}, {SI4, 6},   {NOTE_REST, 2},
+    {MI4, 4},{DO_S5, 4},{SI4, 4},{RA4, 4},{SO_S4, 4},{RA4, 4},{SO_S4, 4},{NOTE_REST, 6},
 
+    {MI4, 6},{NOTE_REST, 2},{MI5, 4},{SI4, 4},{RA4, 4},{SO_S4, 4},{MI4, 6},{NOTE_REST, 2},
+    {SI3, 4},{SI3, 4},{SO_S4, 4},{MI4, 4},{FA_S4, 4},{RE_S4, 4},{SO_S4, 6},{NOTE_REST, 2},
+ 
+    {MI4, 6},{NOTE_REST, 2},{MI5, 4},{SI4, 4},{RA4, 4},{SO_S4, 4},{MI4, 6},{NOTE_REST, 2},
+    {MI4, 4},{RA4, 4},{SO_S4, 4},{FA_S4, 4},{MI4, 4},{RE_S4, 4},{MI4, 6},
+
+    {NOTE_REST, 8},
 };
+
 
 // 初期化
 void setup() {
